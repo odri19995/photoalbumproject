@@ -4,7 +4,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import javax.persistence.*;
 import java.util.Date;
 @Entity
-@Table(name="photo", schema="photo_album", uniqueConstraints = {@UniqueConstraint(columnNames = "photo_id")})
+@Table(name="photo", schema="photo", uniqueConstraints = {@UniqueConstraint(columnNames = "photo_id")})
 public class Photo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
